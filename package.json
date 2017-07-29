@@ -1,0 +1,28 @@
+{
+  "name": "pawsies-rtm-gateway",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "babel -d dist/ src/",
+    "prestart": "npm run compile",
+    "start": "node dist/index.js | bunyan"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.9.0",
+    "bunyan": "^1.8.0",
+    "curry": "^1.2.0",
+    "dotenv": "^2.0.0",
+    "hashtable": "^2.0.2",
+    "node-uuid": "^1.4.7",
+    "reef-client": "^1.0.0-beta.6",
+    "reef-service": "^1.0.0-beta.6",
+    "url-parse": "^1.1.3",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0"
+  }
+}
